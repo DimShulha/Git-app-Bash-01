@@ -1,15 +1,23 @@
+
 public class Main {
-    static int a = 4;
-    static int b = 2;
 
     public static void main(String[] args) {
-        System.out.println("My git app.");
 
-        int d = divide(a,b);
+        System.out.println("My git app.");
+        int a = 4;
+        int b = 2;
+        int d = divide(a, b);
         System.out.println(d);
+        deleTed();
     }
 
-    private static int divide(int a, int b){
+    private static void deleTed(){
+        StringBuffer s = new StringBuffer("My git app.");
+        s.delete(0,10);
+        System.out.println(s);
+    }
+
+    private static int divide(int a, int b) {
         return a / b;
     }
 }
